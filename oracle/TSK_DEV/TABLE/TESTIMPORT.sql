@@ -1,0 +1,4 @@
+CREATE TABLE "TSK_DEV"."TESTIMPORT" 
+   (	"I" NUMBER
+   ) ;
+   
