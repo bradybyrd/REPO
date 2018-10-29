@@ -1,0 +1,43 @@
+-- Name: change_requests; Type: TABLE; Schema: public; Owner: deploy
+--
+CREATE TABLE public.change_requests (
+    id integer NOT NULL,
+    project_server_id integer,
+    plan_id integer,
+    tab_id integer,
+    short_description text,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL,
+    category character varying(255),
+    sys_id character varying(255),
+    cg_no character varying(255),
+    start_date character varying(255),
+    end_date character varying(255),
+    planned_start_date character varying(255),
+    planned_end_date character varying(255),
+    approval character varying(255),
+    description text,
+    show_in_step boolean DEFAULT false,
+    u_application_name character varying(255),
+    u_stage character varying(255),
+    cr_state character varying(255),
+    u_version_tag character varying(255),
+    query_id integer,
+    u_pmo_project_id character varying(255),
+    u_cc_environment character varying(255),
+    assignment_group character varying(255),
+    risk character varying(255),
+    change_plan text,
+    backout_plan text,
+    test_plan text,
+    u_config_items_list character varying(2000),
+    saved_remotely boolean DEFAULT true,
+    deleted_remotely boolean DEFAULT false,
+    u_code_synch_required character varying(255),
+    u_service_affecting boolean DEFAULT true,
+    u_release_notes text,
+    cr_type character varying(255),
+    u_streamstep_link character varying(255)
+);
+ALTER TABLE public.change_requests OWNER TO deploy;
+--
