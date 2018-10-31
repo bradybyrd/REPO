@@ -9,9 +9,7 @@ CREATE TABLE public.locations (
     "COUNTRY_ID" character varying(255),
     watershed character varying(100),
     elevation integer,
-    rainfall integer,
-    metro_area character varying(40),
-    metro_pop integer
+    rainfall integer
 );
 ALTER TABLE public.locations OWNER TO deploy;
 --
