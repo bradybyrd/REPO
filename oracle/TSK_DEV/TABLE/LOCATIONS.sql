@@ -10,7 +10,8 @@ CREATE TABLE "TSK_DEV"."LOCATIONS"
 	"RAINFALL" NUMBER, 
 	"METRO_AREA" VARCHAR2(40), 
 	"METRO_POP" NUMBER, 
-	"BUILDING" VARCHAR2(40)
+	"BUILDING" VARCHAR2(40), 
+	"REGION" VARCHAR2(40)
    ) ;
    COMMENT ON COLUMN "TSK_DEV"."LOCATIONS"."LOCATION_ID" IS 'Primary key of locations table';
    COMMENT ON COLUMN "TSK_DEV"."LOCATIONS"."STREET_ADDRESS" IS 'Street address of an office, warehouse, or production site of a company.
