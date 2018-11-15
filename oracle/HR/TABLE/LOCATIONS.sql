@@ -7,7 +7,8 @@ CREATE TABLE "HR"."LOCATIONS"
 	"COUNTRY_ID" CHAR(2), 
 	"PLANET" VARCHAR2(50), 
 	"REGION_ID" NUMBER, 
-	"SOLARSYSTEM" VARCHAR2(50)
+	"SOLARSYSTEM" VARCHAR2(50), 
+	"ELEVATION" NUMBER
    ) ;
    COMMENT ON COLUMN "HR"."LOCATIONS"."LOCATION_ID" IS 'Primary key of locations table';
    COMMENT ON COLUMN "HR"."LOCATIONS"."STREET_ADDRESS" IS 'Street address of an office, warehouse, or production site of a company.
