@@ -11,7 +11,8 @@ println "#----------- Remote Pipeline Execution ------------#"
 // The keys and values in settings will be added to (or overwrite) the settings in the local_settings.json file
 def settings = [
 	"pipeline" : "MP_ProjB",
-	"settings_file" : "C:\\Automation\\dbm_demo\\devops\\git_triggers\\local_settings.json"  
+	"settings_file" : "C:\\Automation\\dbm_demo\\devops\\git_triggers\\local_settings.json",
+	"source_scripts_strategy" : "single_branch"
 ]
 // Add a properties for Platform and Skip_Packaging more
 properties([
