@@ -10,7 +10,7 @@ CREATE TABLE "LOCATIONS"
 	"METRO_AREA" VARCHAR2(40), 
 	"METRO_POP" NUMBER
    ) ;
- 
+
    COMMENT ON COLUMN "LOCATIONS"."LOCATION_ID" IS 'Primary key of locations table';
  
    COMMENT ON COLUMN "LOCATIONS"."STREET_ADDRESS" IS 'Street address of an office, warehouse, or production site of a company.
@@ -32,6 +32,7 @@ located. Foreign key to country_id column of the countries table.';
 warehouse, and/or production site of a company. Does not store addresses /
 locations of customers. Contains 23 rows; references with the
 departments and countries tables. ';
+ 
 
   CREATE INDEX "LOC_CITY_IX" ON "LOCATIONS" ("CITY") 
   ;
@@ -41,11 +42,11 @@ departments and countries tables. ';
  
   CREATE INDEX "LOC_STATE_PROVINCE_IX" ON "LOCATIONS" ("STATE_PROVINCE") 
   ;
- 
+  
   ALTER TABLE "LOCATIONS" ADD CONSTRAINT "LOC_C_ID_FK" FOREIGN KEY ("COUNTRY_ID")
 	  REFERENCES "COUNTRIES" ("COUNTRY_ID") ENABLE;
- 
+  
   ALTER TABLE "LOCATIONS" MODIFY ("CITY" CONSTRAINT "LOC_CITY_NN" NOT NULL ENABLE);
  
-  ALTER TABLE "LOCATIONS" ADD CONSTRAINT "LOC_ID_PK" PRIMARY KEY ("LOCATION_ID") ENABLE
-/
+  ALTER TABLE "LOCATIONS" ADD CONSTRAINT "LOC_ID_PK" PRIMARY KEY ("LOCATION_ID") ENABLE;
+  
