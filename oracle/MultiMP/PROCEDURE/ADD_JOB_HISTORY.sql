@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE "MULTIUAT"."ADD_JOB_HISTORY" 
+CREATE OR REPLACE PROCEDURE "<SCHEMANAME>"."ADD_JOB_HISTORY" 
   (  p_emp_id          job_history.employee_id%type
    , p_start_date      job_history.start_date%type
    , p_end_date        job_history.end_date%type
