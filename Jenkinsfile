@@ -10,7 +10,7 @@ master include.
 println "#----------- Remote Pipeline Execution ------------#"
 // The keys and values in settings will be added to (or overwrite) the settings in the local_settings.json file
 def settings = [
-	"pipeline" : "MP_ProjB",
+	"pipeline" : "MP_ProjA",
 	"settings_file" : "C:\\Automation\\dbm_demo\\devops\\git_triggers\\local_settings_include.json"  
 ]
 // Add a properties for Platform and Skip_Packaging more
